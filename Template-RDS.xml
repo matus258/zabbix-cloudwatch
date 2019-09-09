@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>3.0</version>
-    <date>2019-07-10T12:33:49Z</date>
+    <version>4.2</version>
+    <date>2019-09-09T19:00:10Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>RDS - Mandic</template>
-            <name>RDS - Mandic</name>
+            <template>Template RDS</template>
+            <name>Template RDS</name>
             <description/>
             <groups>
                 <group>
@@ -39,17 +39,15 @@
                     <name>CPU Utilization</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;CPUUtilization&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>%</units>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -57,11 +55,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -77,22 +72,41 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Database Connections</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;DatabaseConnections&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -100,11 +114,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -120,22 +131,41 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Disk Queue Depth</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;DiskQueueDepth&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -143,11 +173,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -163,22 +190,41 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Free Storage Space</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;FreeStorageSpace&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>B</units>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -186,11 +232,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -206,22 +249,41 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Network Receive Throughput</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;NetworkReceiveThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>Bps</units>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -229,11 +291,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -249,22 +308,41 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Network Transmit Throughput</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;NetworkTransmitThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>Bps</units>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -272,11 +350,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -292,22 +367,41 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Read IOPS</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;ReadIOPS&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>count/s</units>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -315,11 +409,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -335,22 +426,41 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Read Latecy</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>1</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;ReadLatecy&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>ms</units>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -358,11 +468,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1000</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -378,22 +485,48 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing>
+                        <step>
+                            <type>1</type>
+                            <params>1000</params>
+                            <error_handler>0</error_handler>
+                            <error_handler_params/>
+                        </step>
+                    </preprocessing>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Read Throughput</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;ReadThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>Bps</units>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -401,11 +534,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -421,22 +551,41 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Swap Usage</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;SwapUsage&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>B</units>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -444,11 +593,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -464,22 +610,41 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Write IOPS</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;WriteIOPS&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>count/s</units>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -487,11 +652,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -507,22 +669,41 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Write Latency</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>1</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;WriteLatency&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>ms</units>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -530,11 +711,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1000</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -550,22 +728,48 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing>
+                        <step>
+                            <type>1</type>
+                            <params>1000</params>
+                            <error_handler>0</error_handler>
+                            <error_handler_params/>
+                        </step>
+                    </preprocessing>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Write Throughput</name>
                     <type>10</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>cloudwatch-zabbix.py[&quot;WriteThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     <delay>300</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>Bps</units>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -573,11 +777,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -593,214 +794,357 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
             </items>
             <discovery_rules/>
+            <httptests/>
             <macros/>
             <templates/>
             <screens/>
+            <tags/>
         </template>
     </templates>
     <triggers>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;CPUUtilization&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;95</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;CPUUtilization&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;95</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>Critical CPU Load</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>4</priority>
             <description>CPU com processamento critico (95%), favor verificar</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;DatabaseConnections&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].avg(300)}&gt;240</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;DatabaseConnections&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].avg(300)}&gt;240</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>Critical Database Connections</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>4</priority>
             <description>Acima de 240 conexões no banco.</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;DiskQueueDepth&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;80</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;DiskQueueDepth&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;80</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>Critical Disk Queue Depth</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>4</priority>
             <description>Disk Queue acima de 80</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;ReadIOPS&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;3000</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;ReadIOPS&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;3000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>Critical Reading IOPS</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>4</priority>
             <description>IOPS de leitura acima de 3000</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>({TRIGGER.VALUE}=0 and {RDS - Mandic:cloudwatch-zabbix.py[&quot;ReadThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;70000000) or ({TRIGGER.VALUE}=1 and {RDS - Mandic:cloudwatch-zabbix.py[&quot;ReadThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(10m)}&gt;60000000)</expression>
+            <expression>({TRIGGER.VALUE}=0 and {Template RDS:cloudwatch-zabbix.py[&quot;ReadThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;70000000) or ({TRIGGER.VALUE}=1 and {Template RDS:cloudwatch-zabbix.py[&quot;ReadThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(10m)}&gt;60000000)</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>Critical Read Throughput</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;SwapUsage&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;262144000</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;SwapUsage&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;262144000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>Critical Swap Usage</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>4</priority>
             <description>Critical Swap Usage</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;WriteLatency&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;400</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;WriteLatency&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;400</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>Critical Write Latency</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>4</priority>
             <description>Latencia de escrita acima de 400ms</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;WriteThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;8000000</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;WriteThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;8000000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>Critical Write Throughput</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;WriteIOPS&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;3900</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;WriteIOPS&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;3900</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>Critical Writing IOPS</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>4</priority>
             <description>IOPS de escrita acima de 3900</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;FreeStorageSpace&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&lt;2G</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;FreeStorageSpace&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&lt;2G</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>Espaço Livre em disco inferior a 2Gb</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;FreeStorageSpace&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&lt;3G</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;FreeStorageSpace&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&lt;3G</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>Espaço Livre em disco inferior a 3Gb</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;CPUUtilization&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;80</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;CPUUtilization&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;80</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>High CPU Load</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>2</priority>
             <description>CPU com processamento em 80%</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;DatabaseConnections&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;150</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;DatabaseConnections&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;150</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>High Database Connections</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>2</priority>
             <description>Acima de 150 conexões no banco.</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;DiskQueueDepth&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;60</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;DiskQueueDepth&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;60</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>High Disk Queue Depth</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>2</priority>
             <description>Disk Queue acima de 60</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;ReadIOPS&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;2800</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;ReadIOPS&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;2800</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>High Reading IOPS</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>2</priority>
             <description>IOPS de leitura acima de 2800</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>({TRIGGER.VALUE}=0 and {RDS - Mandic:cloudwatch-zabbix.py[&quot;ReadThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;60000000) or ({TRIGGER.VALUE}=1 and {RDS - Mandic:cloudwatch-zabbix.py[&quot;ReadThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(10m)}&gt;55000000)</expression>
+            <expression>({TRIGGER.VALUE}=0 and {Template RDS:cloudwatch-zabbix.py[&quot;ReadThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;60000000) or ({TRIGGER.VALUE}=1 and {Template RDS:cloudwatch-zabbix.py[&quot;ReadThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(10m)}&gt;55000000)</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>High Read Throughput</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;SwapUsage&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;104857600</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;SwapUsage&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;104857600</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>High Swap Usage</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>2</priority>
             <description>Swap acima de 10M</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;WriteLatency&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;300</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;WriteLatency&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;300</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>High Write Latency</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>2</priority>
             <description>Latencia de escrita acima de 300ms</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;WriteThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;5000000</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;WriteThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;5000000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>High Write Throughput</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
-            <expression>{RDS - Mandic:cloudwatch-zabbix.py[&quot;WriteIOPS&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;2000</expression>
+            <expression>{Template RDS:cloudwatch-zabbix.py[&quot;WriteIOPS&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;].min(5m)}&gt;2000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>High Writing IOPS</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>2</priority>
             <description>IOPS de escrita acima de 3200</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
     </triggers>
     <graphs>
@@ -830,7 +1174,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>RDS - Mandic</host>
+                        <host>Template RDS</host>
                         <key>cloudwatch-zabbix.py[&quot;CPUUtilization&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
@@ -862,7 +1206,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>RDS - Mandic</host>
+                        <host>Template RDS</host>
                         <key>cloudwatch-zabbix.py[&quot;DatabaseConnections&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
@@ -894,7 +1238,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>RDS - Mandic</host>
+                        <host>Template RDS</host>
                         <key>cloudwatch-zabbix.py[&quot;ReadLatecy&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
@@ -906,7 +1250,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>RDS - Mandic</host>
+                        <host>Template RDS</host>
                         <key>cloudwatch-zabbix.py[&quot;WriteLatency&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
@@ -938,7 +1282,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>RDS - Mandic</host>
+                        <host>Template RDS</host>
                         <key>cloudwatch-zabbix.py[&quot;FreeStorageSpace&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
@@ -970,7 +1314,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>RDS - Mandic</host>
+                        <host>Template RDS</host>
                         <key>cloudwatch-zabbix.py[&quot;ReadIOPS&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
@@ -982,7 +1326,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>RDS - Mandic</host>
+                        <host>Template RDS</host>
                         <key>cloudwatch-zabbix.py[&quot;WriteIOPS&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
@@ -1014,7 +1358,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>RDS - Mandic</host>
+                        <host>Template RDS</host>
                         <key>cloudwatch-zabbix.py[&quot;NetworkReceiveThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
@@ -1026,7 +1370,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>RDS - Mandic</host>
+                        <host>Template RDS</host>
                         <key>cloudwatch-zabbix.py[&quot;NetworkTransmitThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
@@ -1058,7 +1402,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>RDS - Mandic</host>
+                        <host>Template RDS</host>
                         <key>cloudwatch-zabbix.py[&quot;ReadThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
@@ -1090,7 +1434,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>RDS - Mandic</host>
+                        <host>Template RDS</host>
                         <key>cloudwatch-zabbix.py[&quot;SwapUsage&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
@@ -1122,7 +1466,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>RDS - Mandic</host>
+                        <host>Template RDS</host>
                         <key>cloudwatch-zabbix.py[&quot;WriteThroughput&quot;,&quot;Average&quot;,&quot;DBInstanceIdentifier&quot;,&quot;{HOSTNAME}&quot;,&quot;AWS/RDS&quot;,&quot;{$REGION}&quot;,&quot;{$ACCESS_KEY}&quot;,&quot;{$SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
